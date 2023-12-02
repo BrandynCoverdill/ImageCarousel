@@ -6,3 +6,65 @@ body > * {
 * {
 	box-sizing: border-box;
 }
+
+.container {
+	margin: 2em auto;
+	max-width: 500px;
+	height: 300px;
+	position: relative;
+	outline: 10px solid #b4b4b4;
+	box-shadow: -10px 10px 15px black;
+}
+
+.image-container {
+	max-width: 500px;
+	height: 300px;
+}
+
+.navigation-dots {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	transform: translateX(50%);
+	width: 100px;
+	height: 25px;
+	background: transparent;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	position: absolute;
+	bottom: 50%;
+	transform: translateY(50%);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button:hover {
+	background: rgba(255, 255, 255, 0.5);
+	color: black;
+	transition-duration: 0.3s;
+}
+
+.next {
+	right: 5px;
+}
+
+.prev {
+	left: 5px;
+}
