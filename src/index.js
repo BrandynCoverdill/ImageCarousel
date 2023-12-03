@@ -1,10 +1,10 @@
 import 'normalize.css';
 import './styles.css';
-import '../dist/images/country-side-sunrise.jpg';
-import '../dist/images/forest-bridge.jpg';
-import '../dist/images/green-hills.jpg';
-import '../dist/images/lake-view.jpg';
-import '../dist/images/sun-through-branches.jpg';
+import './/images/country-side-sunrise.jpg';
+import './/images/forest-bridge.jpg';
+import './/images/green-hills.jpg';
+import './/images/lake-view.jpg';
+import './/images/sun-through-branches.jpg';
 
 // Array of image locations
 const images = [
