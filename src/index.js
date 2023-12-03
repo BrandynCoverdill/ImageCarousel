@@ -1,5 +1,10 @@
 import 'normalize.css';
 import './styles.css';
+import '../dist/images/country-side-sunrise.jpg';
+import '../dist/images/forest-bridge.jpg';
+import '../dist/images/green-hills.jpg';
+import '../dist/images/lake-view.jpg';
+import '../dist/images/sun-through-branches.jpg';
 
 // Array of image locations
 const images = [
@@ -80,14 +85,14 @@ navigationDots.forEach((dot) => {
             background: black;
         `;
 		image.style.cssText += `
-            background-image: url("../src/images/${images[currentImage]}");
+            background-image: url("./images/${images[currentImage]}");
         `;
 	});
 });
 
 // Style elements
 image.style.cssText = `
-    background-image: url("../src/images/${images[0]}");
+    background-image: url("./images/${images[0]}");
     background-size: cover;
     background-position: center;
     max-width: 500px;
@@ -111,7 +116,7 @@ function next() {
 		currentImage = 0;
 	}
 	image.style.cssText += `
-	    background-image: url("../src/images/${images[currentImage]}")
+	    background-image: url("./images/${images[currentImage]}")
 	`;
 	navigationDots.forEach((dot) => {
 		if (currentImage === +dot.dataset.id) {
@@ -135,7 +140,7 @@ function prev() {
 		currentImage = images.length - 1;
 	}
 	image.style.cssText += `
-	    background-image: url("../src/images/${images[currentImage]}")
+	    background-image: url("./images/${images[currentImage]}")
 	`;
 	navigationDots.forEach((dot) => {
 		if (currentImage === +dot.dataset.id) {
